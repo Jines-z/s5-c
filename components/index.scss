@@ -1,0 +1,105 @@
+@keyframes enter {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes leave {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.hc_enter {
+  animation: enter .2s ease-out;
+  animation-fill-mode: forwards;
+}
+
+.hc_leave {
+  animation: leave .2s ease-out;
+  animation-fill-mode: forwards;
+}
+
+.hc_toast {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  background-color: rgba(0, 0, 0, .7);
+  z-index: 9999999;
+  border-radius: 5px;
+  padding: 6px 12px;
+  line-height: 1;
+  font-size: 14px;
+  opacity: 0;
+  .hc_toast_text {
+    color: #fff;
+  }
+}
+
+.hc_loading {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: transparent;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  z-index: 1111;
+  .hc_loading_spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, .6);
+    transform: translate3d(-50%, -50%, 0);
+  }
+  .hc_loading_circular {
+    width: 32px;
+    height: 32px;
+    animation: loading-rotate 2s linear infinite
+  }
+  .hc_loading_cir {
+    animation: loading-dash 1.5s ease-in-out infinite;
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: 0;
+    stroke-width: 2px;
+    stroke: #fff;
+    stroke-linecap: round;
+  }
+  .hc_loading_text {
+    display: block;
+    font-size: 14px;
+    margin-top: 2px;
+  }
+}
+
+@keyframes loading-rotate {
+  100% {
+    transform: rotate(360deg)
+  }
+}
+
+@keyframes loading-dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0
+  }
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -40px
+  }
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -120px
+  }
+}

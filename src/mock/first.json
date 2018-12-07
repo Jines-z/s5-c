@@ -1,0 +1,13 @@
+{
+  "success"  : true,
+  "code"   : 200,
+  "data" : {
+    "cardNo"           : 3384400366667777,
+    "amount"           : 10000,
+    "balance"          : 10000,
+    "availableBalance" : 10000,
+    "freezeAmount"     : 0,
+    "expireTime"       : 1534749343000,
+    "status"           : 1
+  }
+}
