@@ -1,6 +1,6 @@
 {
   "name": "s5-c",
-  "version": "1.0.10",
+  "version": "1.0.12",
   "author": "zhengaojin <zhengaojin@live.cn>",
   "private": false,
   "description": "This is a component used in s5-cli",

@@ -47,28 +47,8 @@ const Utils = {
         ]
         return `${year}-${month}-${day} ${hour}:${minute}`
     },
-    getSearchParam(name) {
-        const search = '?' + window.location.href.split('?')[1]
-        const pattern = new RegExp('[?&]' + name + '=([^&]+)', 'g')
-        const matcher = pattern.exec(search)
-        let items = null
-        if (matcher != null) {
-            try {
-                items = decodeURIComponent(decodeURIComponent(matcher[1]))
-            } catch (e) {
-                try {
-                    items = decodeURIComponent(matcher[1])
-                } catch (e) {
-                    items = matcher[1]
-                }
-            }
-        }
-        return items
-    },
-    getFileNameWithoutExt(fileName) {
-        const index = fileName.lastIndexOf('.')
-        const ext = fileName.substring(index, fileName.length)
-        return fileName.replace(ext, '')
+    display(ar) {
+        return ar ? 'inline-block' : 'none'
     }
 }
 

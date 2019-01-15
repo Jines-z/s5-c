@@ -1,5 +1,4 @@
 import { addClass, removeClass, hasClass } from '../Utils'
-
 const Toast = {
     $body: document.body,
     $wrap: document.createElement('div'),

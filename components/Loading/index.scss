@@ -1,0 +1,39 @@
+.hc_loading {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: transparent;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  z-index: 9999;
+  .hc_loading_spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, .6);
+    transform: translate3d(-50%, -50%, 0);
+  }
+  .hc_loading_circular {
+    width: 32px;
+    height: 32px;
+    animation: loading-rotate 2s linear infinite
+  }
+  .hc_loading_cir {
+    animation: loading-dash 1.5s ease-in-out infinite;
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: 0;
+    stroke-width: 2px;
+    stroke: #fff;
+    stroke-linecap: round;
+  }
+  .hc_loading_text {
+    display: block;
+    font-size: 14px;
+    margin-top: 2px;
+  }
+}
