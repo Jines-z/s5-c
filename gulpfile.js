@@ -72,7 +72,7 @@ gulp.task('com-scss', function () {
 })
 
 gulp.task('copy-scss', function () {
-    return gulp.src([COM_DIR + '/index.scss'])
+    return gulp.src([COM_DIR + '/**/*.scss'])
         .pipe(changed(LIB_DIR))
         .pipe(gulp.dest(LIB_DIR))
 
@@ -119,5 +119,5 @@ gulp.task('default', ['html', 'com-scss', 'copy-scss'], function () {
     gulp.watch(SRC_DIR + '/*.js', ['js-watch'])
     gulp.watch(COM_DIR + '/**/*.js', ['com-watch'])
     gulp.watch(SRC_DIR + '/*.html', ['html-watch'])
-    gulp.watch(COM_DIR + '/index.scss', ['scss-watch'])
+    gulp.watch(COM_DIR + '/**/*.scss', ['scss-watch'])
 })
