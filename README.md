@@ -2,31 +2,31 @@
 
 ### Toast
 ```Javascript
-import { Toast } from 'hc-agg'
+import { Toast } from 's5-c'
 
 Toast.show('I am toast', 3000)
 ```
 
 | 参数 | 说明 | 类型 | 必须 | 默认值 |
-| :-- | :-- | :-- | :-- | :-- |
+| :---- | :---- | :---- | :---- | :---- |
 | text | 展示的文字 | String | 是 | - |
 | duration | 展示的时长 | 毫秒(ms) | 否 | 3000 |
 
 ### Loading
 ```Javascript
-import { Loading } from 'hc-agg'
+import { Loading } from 's5-c'
 
 Loading.show('LOADING ...')
 Loading.hide()
 ```
 
 | 参数 | 说明 | 类型 | 必须 | 默认值 |
-| :-- | :-- | :-- | :-- | :-- |
+| :---- | :---- | :---- | :---- | :---- |
 | text | 展示的文字 | String | 否 | - |
 
 ### Modal
 ```Javascript
-import { Modal } from 'hc-agg'
+import { Modal } from 's5-c'
 
 // 自定义Modal，参数为jsNode
 Modal.show(``)
@@ -42,14 +42,14 @@ Modal.hide()
 ```
 
 | 参数 | 说明 | 类型 | 必须 | 默认值 |
-| :-- | :-- | :-- | :-- | :-- |
+| :---- | :---- | :---- | :---- | :---- |
 | title | 标题 | String | 否 | - |
 | description | 描述信息 | String | 否 | - |
 | image | 图片地址 | String | 否 | - |
 
 ### Dialog
 ```Javascript
-import { Dialog } from 'hc-agg'
+import { Dialog } from 's5-c'
 ```
 ```Javascript
 Dialog.alert({
@@ -62,7 +62,7 @@ Dialog.alert({
 })
 ```
 | 参数 | 说明 | 类型 | 必须 | 默认值 |
-| :-- | :-- | :-- | :-- | :-- |
+| :---- | :---- | :---- | :---- | :---- |
 | title | 标题 | String | 否 | ‘提示’ |
 | description | 描述信息 | String | 否 | - |
 | buttonColor | 按钮颜色 | String | 否 | - |
@@ -82,7 +82,7 @@ Dialog.confirm({
 })
 ```
 | 参数 | 说明 | 类型 | 必须 | 默认值 |
-| :-- | :-- | :-- | :-- | :-- |
+| :---- | :---- | :---- | :---- | :---- |
 | title | 标题 | String | 否 | ‘提示’ |
 | description | 描述信息 | String | 否 | - |
 | confirmColor | 确认按钮颜色 | String | 否 | ‘#ff4d4d’ |
@@ -92,7 +92,7 @@ Dialog.confirm({
 
 ### Http
 ```Javascript
-import { Http } from 'hc-agg'
+import { Http } from 's5-c'
 
 const options = {
     baseURL: 'https://api.yuecard.net',
@@ -108,7 +108,7 @@ const http = new Http(options)
 ```
 
 | 参数 | 说明 | 类型 | 必须 | 默认值 |
-| :-- | :-- | :-- | :-- | :-- |
+| :---- | :---- | :---- | :---- | :---- |
 | baseURL | 请求的基地址 | String | 否 | - |
 | timeout | 超时时间 | Number | 否 | 20000 |
 | loading | 加载提示 | Boolean | 否 | true |
@@ -119,11 +119,11 @@ const http = new Http(options)
 
 ### Utils
 ```Javascript
-import { Utils } from 'hc-agg'
+import { Utils } from 's5-c'
 ```
 
 | 方法 | 说明 |
-| :-- | :-- |
+| :---- | :---- |
 | hasClass(el, cName) | 判断是否含有某个class |
 | addClass(el, cName) | 添加class |
 | removeClass(el, cName) | 移除class |
@@ -144,11 +144,11 @@ Utils.formatTime(time) // 2018-09-19 14:50
 
 ### Cookie
 ```Javascript
-import { Cookie } from 'hc-agg'
+import { Cookie } from 's5-c'
 ```
 
 | 方法 | 说明 |
-| :-- | :-- |
+| :---- | :---- |
 | set | 创建cookie |
 | get | 读取cookie |
 | remove | 删除cookie |
@@ -180,7 +180,7 @@ Cookie.remove('name', { path: '' })
 <span id="Clipboard" data-clipboard-text="复制到粘贴板">复制到粘贴板</span>
 ```
 ```Javascript
-import { Clipboard } from 'hc-agg'
+import { Clipboard } from 's5-c'
 
 const $span = document.getElementById('Clipboard')
 const c = new Clipboard($span) // 点击span后即可复制到粘贴板
