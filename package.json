@@ -1,14 +1,13 @@
 {
   "name": "s5-c",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "author": "zhengaojin <zhengaojin@live.cn>",
   "private": false,
   "description": "This is a component used in s5-cli",
   "main": "lib/index.js",
   "license": "MIT",
   "scripts": {
-    "start": "rimraf lib && gulp com-and-script && gulp",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "rimraf lib && gulp com-and-script && gulp"
   },
   "keywords": [
     "javascript",
@@ -40,8 +39,11 @@
     "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^2.6.4",
+    "lodash.template": "^4.5.0",
     "rimraf": "^2.6.2",
-    "run-sequence": "^2.2.1"
+    "run-sequence": "^2.2.1",
+    "shell-quote": "^1.7.1",
+    "uglify-js": "^2.8.24"
   },
   "dependencies": {
     "clipboard": "^2.0.1",

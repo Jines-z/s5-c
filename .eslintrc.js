@@ -30,28 +30,28 @@ module.exports = {
             'node': {
                 'extensions': [
                     '.js',
-                    '.jsx',
-                    '.vue'
+                    '.jsx'
                 ]
             }
         }
     },
     rules: {
-        "indent"                     : ["error", 4, { 'SwitchCase': 1 }],
-        'eqeqeq'                     : 'off',
-        'one-var'                    : 'off',
-        'camelcase'                  : 'off',
-        'no-extra-boolean-cast'      : 'off',
-        'padded-blocks'              : 'off',
-        'eol-last'                   : 'off',
-        'no-useless-escape'          : 'off',
-        'semi'                       : ["error", "never"],
-        'arrow-parens'               : ['error', 'as-needed'],
-        'no-multiple-empty-lines'    : ['error', { 'max': 1 }],
-        'space-before-function-paren': ['error', 'never'],
-        'no-trailing-spaces'         : ['error', { 'skipBlankLines': true }],
-        'no-unreachable'             : process.env.NODE_ENV === 'production' ? 'error' : 'off',
-        'no-debugger'                : process.env.NODE_ENV === 'production' ? 'error' : 'off',
-        'no-console'                 : process.env.NODE_ENV === 'production' ? 'error' : 'off',
+        'indent'                      : ['error', 4, { 'SwitchCase': 1 }],
+        'eqeqeq'                      : 'off',
+        'one-var'                     : 'off',
+        'camelcase'                   : 'off',
+        'no-extra-boolean-cast'       : 'off',
+        'padded-blocks'               : 'off',
+        'eol-last'                    : 'off',
+        'no-useless-escape'           : 'off',
+        'semi'                        : ['error', 'never'],
+        'arrow-parens'                : ['error', 'as-needed'],
+        'no-multiple-empty-lines'     : ['error', { 'max': 1 }],
+        'space-before-function-paren' : ['error', 'never'],
+        'prefer-promise-reject-errors': ['error', { 'allowEmptyReject': true }],
+        'no-trailing-spaces'          : ['error', { 'skipBlankLines': true }],
+        'no-unreachable'              : process.env.NODE_ENV === 'production' ? 'error' : 'off',
+        'no-debugger'                 : process.env.NODE_ENV === 'production' ? 'error' : 'off',
+        'no-console'                  : process.env.NODE_ENV === 'production' ? 'error' : 'off',
     }
 }
